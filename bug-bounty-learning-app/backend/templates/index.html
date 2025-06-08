@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bug Bounty Learning App</title>
+</head>
+<body>
+    <h1>SQL Injection Challenge</h1>
+    <form method="post" action="/sqli">
+        Username: <input type="text" name="username" />
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result %}
+    <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+</body>
+</html>
